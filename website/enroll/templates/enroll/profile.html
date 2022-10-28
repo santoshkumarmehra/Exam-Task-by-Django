@@ -31,7 +31,7 @@
                       <!-- <a class="nav-link active text-light" href="{% url 'signup' %}">Signup</a> -->
                       <a href="{% url 'logout' %}">
                         <button type="button" class="btn btn-primary btn-block mb-4" value="Signin">Logout</button>
-                    </a>
+                      </a>
                     </li>
                     <!-- <li class="nav-item"><a class="nav-item" href="#">Something else here</a></li> -->
                   </ul>
@@ -81,6 +81,81 @@
     
      
     <!-- </form> -->
+
+    
+
+    
+
+
+
+    <script >
+//           window.history.pushState({urlpath:'https://www.google.com/'}, "", "");
+
+// window.onpopstate = function(event) {
+//     if(event){
+//         window.location.href = 'https://www.google.com/';
+//         // Code to handle back button or prevent from navigation
+//     }
+// }
+//         jQuery(document).ready(function($) {
+
+// if (window.history && window.history.pushState) {
+
+//   $(window).on('popstate', function() {
+//     var hashLocation = location.hash;
+//     var hashSplit = hashLocation.split("#!/");
+//     var hashName = hashSplit[1];
+
+//     if (hashName !== '') {
+//       var hash = window.location.hash;
+//       if (hash === '') {
+//         alert('Back button was pressed.');
+//           window.location='www.example.com';
+//           return false;
+//       }
+//     }
+//   });
+
+//   window.history.pushState('forward', null, '/http://127.0.0.1:8000//mainexam/');
+// }
+
+// });
+
+
+//         indow.history.pushState({page: 1}, "", "");
+
+// window.onpopstate = function(event) {
+//     if(event){
+//         window.location.href = 'https://www.google.com/';
+//         // Code to handle back button or prevent from navigation
+//     }
+// }
+
+
+//       bajb_backdetect.OnBack = function(){
+//     document.location.href = 'http://google.com';
+// }
+
+
+      //  function preBack() {
+      //       window.history.forward();
+      //   }
+      //   setTimeout("preBack()", 0);
+      //   window.onunload = function () { 'https://www.google.com/' };
+
+      // history.pushState(null, null, '<?php echo $_SERVER["REQUEST_URI"]; ?>');
+      //   window.addEventListener('popstate', function (event) {
+      //     window.location.assign("http://www.yoururl.com/");
+      //   });
+
+
+      function preBack() {
+          window.history.forward();
+      }
+      setTimeout("preBack()", 0);
+      window.onunload = function () { null };
+
+  </script>
     
     </body>
 </html>
